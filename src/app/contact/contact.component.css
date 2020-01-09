@@ -1,0 +1,16 @@
+.contact-email,
+.contact-call {
+  font-size: 17px;
+}
+
+p,
+div,
+h1,
+a {
+  font-family: "geomanistregular", Helvetica, sans-serif;
+  letter-spacing: 0.84px;
+}
+
+p {
+  font-size: 21px;
+}

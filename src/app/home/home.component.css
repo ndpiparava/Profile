@@ -1,0 +1,32 @@
+p,
+div,
+h1,
+h4 {
+  font-family: "geomanistregular", Helvetica, sans-serif;
+  letter-spacing: 0.84px;
+}
+
+p {
+  font-size: 21px;
+  line-height: 30px;
+  vertical-align: top;
+  letter-spacing: 0.84px;
+  word-spacing: 0px;
+  text-decoration: #fff;
+}
+
+h1 {
+  line-height: 35px;
+  text-decoration: #fff;
+  line-height: 30px;
+  vertical-align: top;
+  letter-spacing: 0.84px;
+  word-spacing: 0px;
+}
+
+p,
+h1,
+.card {
+  background: rgb(181, 197, 136);
+  font-family: "geomanistregular", Helvetica, sans-serif;
+}

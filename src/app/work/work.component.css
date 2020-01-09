@@ -1,0 +1,15 @@
+p,
+div,
+h1 {
+  font-family: "geomanistregular", Helvetica, sans-serif;
+  letter-spacing: 0.84px;
+}
+
+p {
+  font-size: 21px;
+}
+
+.card {
+  /* background: #ebc944; */
+  background: #ffc600;
+}
