@@ -24,7 +24,7 @@ h1 {
 }
 
 .port-item:focus {
-  outline: 2px solid black;
+  outline: none;
 }
 
 #main-header img {
@@ -50,4 +50,16 @@ h1 {
   .port-item {
     padding: 3em !important;
   }
+}
+
+.bg-success {
+  background-color: #5aa46b !important;
+}
+
+.bg-warning {
+  background-color: #e3ba3f !important;
+}
+
+.bg-danger {
+  background-color: #e34655 !important;
 }

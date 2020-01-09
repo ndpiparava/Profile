@@ -14,3 +14,7 @@ a {
 p {
   font-size: 21px;
 }
+
+.bg-danger {
+  background-color: #e34655 !important;
+}

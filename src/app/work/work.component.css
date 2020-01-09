@@ -11,5 +11,10 @@ p {
 
 .card {
   /* background: #ebc944; */
-  background: #ffc600;
+  /* background: #ffc600; */
+  background: #e3ba3f !important;
+}
+
+.bg-warning {
+  background-color: #e3ba3f !important;
 }

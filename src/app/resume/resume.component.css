@@ -8,3 +8,20 @@ h1 {
 p {
   font-size: 21px;
 }
+
+#ReferenceContact p,
+div {
+  font-size: 17px;
+  font-family: "geomanistregular", Helvetica, sans-serif;
+  letter-spacing: 0.84px;
+}
+
+#ReferenceContact p,
+a {
+  background: #faf8fa;
+  color: rgb(108, 117, 125);
+}
+
+.bg-success {
+  background-color: #5aa46b !important;
+}
