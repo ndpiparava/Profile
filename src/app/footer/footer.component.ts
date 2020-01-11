@@ -20,6 +20,6 @@ export class FooterComponent implements OnInit {
     // });
     // fileSave("../../assets/img/work/Connect.png", "image.jpg");
     console.log("onDownloadResume");
-    this.googleService.getProfilePDF();
+    //this.googleService.getProfilePDF();
   }
 }
