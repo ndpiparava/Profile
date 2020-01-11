@@ -18,3 +18,10 @@ p {
 .bg-warning {
   background-color: #e3ba3f !important;
 }
+
+@media (max-width: 420px) {
+  .project-item div {
+    height: 100px;
+    width: 100px;
+  }
+}

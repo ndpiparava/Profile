@@ -30,3 +30,9 @@ h1,
   background: rgb(181, 197, 136);
   font-family: "geomanistregular", Helvetica, sans-serif;
 }
+
+@media (max-width: 420px) {
+  .skills h5 {
+    font-size: 21px !important;
+  }
+}

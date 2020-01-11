@@ -18,3 +18,12 @@ p {
 .bg-danger {
   background-color: #e34655 !important;
 }
+
+@media (max-width: 420px) {
+  #contact-email a,
+  #contact-aleternatecall a,
+  #conatct-call a {
+    font-size: 13px;
+    margin: 1px !important;
+  }
+}

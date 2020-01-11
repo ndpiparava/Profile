@@ -63,3 +63,14 @@ h1 {
 .bg-danger {
   background-color: #e34655 !important;
 }
+
+@media (max-width: 420px) {
+  .name-title {
+    font-size: 32px !important;
+    padding: 1rem;
+  }
+
+  .port-item {
+    padding: 1rem !important;
+  }
+}
