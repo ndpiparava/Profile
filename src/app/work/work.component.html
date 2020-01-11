@@ -21,44 +21,9 @@
     </p>
   </div>
   <div class="row no-gutters project-item">
-    <div class="col-md-3">
-      <a
-        href="https://apps.apple.com/us/app/uc-one-connect/id1067459716"
-        data-toggle="lightbox"
-        target="_blank"
-      >
-        <img src="../../assets/img/work/Connect.png" alt="" class="img-fluid" />
-      </a>
-    </div>
-    <div class="col-md-3 project-item">
-      <a
-        href="https://apps.apple.com/us/app/sunrise-mobile-md-ii-for-ipad/id457564027"
-        data-toggle="lightbox"
-        target="_blank"
-      >
-        <img
-          src="../../assets/img/work/sunriseMD.png"
-          alt=""
-          class="img-fluid"
-        />
-      </a>
-    </div>
-    <div class="col-md-3 project-item">
-      <a
-        href="https://itunes.apple.com/us/app/nusale/id522080587?mt=8 "
-        data-toggle="lightbox"
-        target="_blank"
-      >
-        <img src="../../assets/img/work/Nusale.png" alt="" class="img-fluid" />
-      </a>
-    </div>
-    <div class="col-md-3 project-item">
-      <a
-        href="https://apps.apple.com/in/app/cookbook-cuisine/id467334906"
-        data-toggle="lightbox"
-        target="_blank"
-      >
-        <img src="../../assets/img/work/recipe.png" alt="" class="img-fluid" />
+    <div class="col-md-3" *ngFor="let project of projects">
+      <a [href]="project.projectLink" data-toggle="lightbox" target="_blank">
+        <img [src]="project.projectImg" alt="" class="img-fluid" />
       </a>
     </div>
   </div>

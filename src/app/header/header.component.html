@@ -19,32 +19,16 @@
             class="d-flex flex-row justify-content-between align-items-center"
           >
             <h5 class="display-4 name-title">Nitin Piparava</h5>
-            <div class="px-1">
-              <a
-                href="https://www.linkedin.com/in/nitin-piparava-9558852a/"
-                class="text-white"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-            </div>
-            <div class="d-none d-md-block">
-              <a
-                href="https://twitter.com/Ndpiparava"
-                class="text-white"
-                target="_blank"
-              >
-                <i class="fab fa-twitter fa-2x"></i>
-              </a>
-            </div>
-            <div class="px-1">
-              <a
-                href="https://github.com/ndpiparava"
-                class="text-white"
-                target="_blank"
-              >
-                <i class="fab fa-github fa-2x"></i>
-              </a>
+            <div *ngFor="let socialProfile of socialProfiles">
+              <div class="px-1">
+                <a
+                  [href]="socialProfile.profileLink"
+                  class="text-white"
+                  target="_blank"
+                >
+                  <i class="fab {{ socialProfile.profileBrandImg }} fa-2x"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -61,36 +45,13 @@
             class="d-flex flex-row text-white align-items-stretch text-center"
           >
             <div
-              class="port-item bg-info p-4"
+              class="port-item bg-info {{ item.colorClass }} p-4"
+              *ngFor="let item of portItems"
               data-toggle="collapse"
-              routerLink="/home"
+              routerLink="{{ item.route }}"
             >
-              <i class="fas fa-home fa-2x d-block"></i>
-              <span class="d-none d-sm-block">Home</span>
-            </div>
-            <div
-              class="port-item p-4 bg-success"
-              data-toggle="collapse"
-              routerLink="/resume"
-            >
-              <i class="fas fa-graduation-cap fa-2x d-block"></i>
-              <span class="d-none d-sm-block">Resume</span>
-            </div>
-            <div
-              class="port-item p-4 bg-warning"
-              data-toggle="collapse"
-              routerLink="/work"
-            >
-              <i class="fas fa-folder-open fa-2x d-block"></i>
-              <span class="d-none d-sm-block">Work</span>
-            </div>
-            <div
-              class=" port-item p-4 bg-danger"
-              data-toggle="collapse"
-              routerLink="/contact"
-            >
-              <i class="fas fa-envelope fa-2x d-block"></i>
-              <span class="d-none d-sm-block">Contact</span>
+              <i class="fas {{ item.iconImg }} fa-2x d-block"></i>
+              <span class="d-none d-sm-block">{{ item.title }}</span>
             </div>
           </div>
         </div>

@@ -15,90 +15,33 @@
     </p>
     <div class="card-deck ">
       <div class="row no-gutters">
-        <div class="col-md-4">
+        <div class="col-md-4" *ngFor="let workHistory of workHistoryDetails">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Cisco Systems</h4>
+              <h4 class="card-title">{{ workHistory.employer }}</h4>
               <p class="cart-text">
-                I am currently with Cisco Systems as consulting engineer.
+                {{ workHistory.shortDescription }}
               </p>
               <div class="card p-2 mb-3 bg-light text-muted text-center">
-                Consulting Engineer
+                {{ workHistory.position }}
               </div>
               <div id="ReferenceContact" class="card  m-0 p-1 bg-light">
                 <div class="card-title pt-1 bg-light text-muted text-center">
-                  Manager: Vamshi Bhaskerabotla
+                  {{ workHistory.referenceDetail.contactPerson }}
                 </div>
                 <a
-                  href="tel:+91 9060924330"
+                  href="tel:{{ workHistory.referenceDetail.cellNumber }}"
                   target="_blank"
                   class="contact-call btn"
                   ><i class="fas fa-phone fa-1.5x"> </i>
-                  <strong> Cell : +91 9060924330</strong>
+                  <strong>
+                    Cell : {{ workHistory.referenceDetail.cellNumber }}</strong
+                  >
                 </a>
               </div>
             </div>
             <div class="card-footer bg-success">
-              <h6 class="text-white">Since : 2017</h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">BroadSoft</h4>
-              <p class="cart-text">
-                Worked as Senior Software engineer as part of mobile app
-                development team.
-              </p>
-              <div class="card p-2 mb-3 bg-light text-muted text-center">
-                Senior Software Engineer
-              </div>
-
-              <div id="ReferenceContact" class="card  m-0 p-1 bg-light">
-                <div class="card-title pt-1 bg-light text-muted text-center">
-                  Manager: Vamshi Bhaskerabotla
-                </div>
-                <a
-                  href="tel:+91 9060924330"
-                  target="_blank"
-                  class="contact-call btn "
-                  ><i class="fas fa-phone fa-1.5x"> </i>
-                  <strong> Cell : +91 9060924330</strong>
-                </a>
-              </div>
-            </div>
-            <div class="card-footer bg-success">
-              <h6 class="text-white">Dates:2015 - 2017</h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">AllScripts</h4>
-              <p class="cart-text">
-                Worked as Software engineer and contributed in helathcare mobile
-                app.
-              </p>
-              <div class="card p-2 nb-3 bg-light text-muted text-center">
-                SoftWare Engineer
-              </div>
-              <div id="ReferenceContact" class="card  mt-3 p-1 bg-light">
-                <div class="card-title pt-1 text-center bg-light text-muted">
-                  Team Lead: Bhasker, KM
-                </div>
-                <a
-                  href="tel:+91 994550355"
-                  target="_blank"
-                  class="contact-call btn bg-light text-muted text-center"
-                  ><i class="fas fa-phone fa-1.5x"> </i>
-                  <strong> Cell : +91 994550355</strong>
-                </a>
-              </div>
-            </div>
-            <div class="card-footer bg-success">
-              <h6 class="text-white">Dates:2013 - 2015</h6>
+              <h6 class="text-white">{{ workHistory.workPeriod }}</h6>
             </div>
           </div>
         </div>

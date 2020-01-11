@@ -1,4 +1,8 @@
 import { Component, OnInit } from "@angular/core";
+import {
+  SocialProfileService,
+  SocialProfile
+} from "../shared/socialprofiles.service";
 
 @Component({
   selector: "app-contact",
@@ -6,9 +10,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./contact.component.css"]
 })
 export class ContactComponent implements OnInit {
-  constructor() {}
+  public socialProfiles;
+  constructor(private socialProfileService: SocialProfileService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.socialProfiles = this.socialProfileService.socialProfiles;
+  }
 
   onSendMail() {}
 }

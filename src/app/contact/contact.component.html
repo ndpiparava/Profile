@@ -43,32 +43,16 @@
     </div>
 
     <div class="d-flex flex-row justify-content-right align-items-left m-md-4">
-      <div class="p-2">
-        <a
-          href="https://www.linkedin.com/in/nitin-piparava-9558852a/"
-          class="text-white"
-          target="_blank"
-        >
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-      </div>
-      <div class=" p-2">
-        <a
-          href="https://twitter.com/Ndpiparava"
-          class="text-white"
-          target="_blank"
-        >
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-      </div>
-      <div class="p-2">
-        <a
-          href="https://github.com/ndpiparava"
-          class="text-white"
-          target="_blank"
-        >
-          <i class="fab fa-github fa-2x"></i>
-        </a>
+      <div *ngFor="let socialProfile of socialProfiles">
+        <div class="p-2">
+          <a
+            [href]="socialProfile.profileLink"
+            class="text-white"
+            target="_blank"
+          >
+            <i class="fab {{ socialProfile.profileBrandImg }} fa-2x"></i>
+          </a>
+        </div>
       </div>
     </div>
     <!-- <form action="">
