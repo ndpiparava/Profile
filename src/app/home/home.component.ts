@@ -22,7 +22,5 @@ export class HomeComponent implements OnInit {
     new Skill("Bootstrap", 85)
   ];
 
-  public test = "80%";
-
   ngOnInit() {}
 }

@@ -48,7 +48,7 @@
               class="port-item bg-info {{ item.colorClass }} p-4"
               *ngFor="let item of portItems"
               data-toggle="collapse"
-              routerLink="{{ item.route }}"
+              [routerLink]="item.route"
             >
               <i class="fas {{ item.iconImg }} fa-2x d-block"></i>
               <span class="d-none d-sm-block">{{ item.title }}</span>

@@ -5,7 +5,7 @@ import { FormsModule } from "@angular/forms";
 import { Routes } from "@angular/router";
 import { CommonModule } from "@angular/common";
 
-const routes: Routes = [{ path: "", component: ContactComponent }];
+const routes: Routes = [{ path: "contact", component: ContactComponent }];
 
 @NgModule({
   declarations: [ContactComponent],
