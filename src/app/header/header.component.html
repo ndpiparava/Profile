@@ -49,6 +49,7 @@
               *ngFor="let item of portItems"
               data-toggle="collapse"
               [routerLink]="item.route"
+              routerLinkActive="active"
             >
               <i class="fas {{ item.iconImg }} fa-2x d-block"></i>
               <span class="d-none d-sm-block">{{ item.title }}</span>

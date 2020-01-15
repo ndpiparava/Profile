@@ -12,32 +12,23 @@
     <h4 class="card-title">Contact Me</h4>
     <div class="card bg-danger border-0">
       <div class="card-body">
-        <div class="m-md-3" id="contact-email">
-          <a
-            href="mailto:ndpiparava@gmail.com"
-            target="_blank"
-            class="contact-email btn  text-white  bg-dark p-2"
-            ><i class="fas fa-envelope"> </i>
-            <strong>Email : ndpiparava@gmail.com</strong>
-          </a>
+        <div class="m-md-3">
+          <app-phonenumber
+            [elementDisplayString]="'Email :'"
+            [Email]="'ndpiparava@gmail.com'"
+          ></app-phonenumber>
         </div>
-        <div class="m-md-3" id="conatct-call">
-          <a
-            href="tel:+91 9916043210"
-            target="_blank"
-            class="contact-call btn text-white  bg-dark p-2"
-            ><i class="fas fa-phone"> </i>
-            <strong>Call : +91 9916043210</strong>
-          </a>
+        <div class="m-md-3">
+          <app-phonenumber
+            [elementDisplayString]="'Call :'"
+            [PhoneNumber]="'+91 9916043210'"
+          ></app-phonenumber>
         </div>
-        <div class="m-md-3" id="contact-aleternatecall">
-          <a
-            href="tel:+91 6362294410"
-            target="_blank"
-            class="contact-call btn text-white  bg-dark p-2"
-            ><i class="fas fa-phone"> </i>
-            <strong>Aleternate Cell : +91 6362294410</strong>
-          </a>
+        <div class="m-md-3">
+          <app-phonenumber
+            [elementDisplayString]="'Aleternate Cell'"
+            [PhoneNumber]="'+91 6362294410'"
+          ></app-phonenumber>
         </div>
       </div>
     </div>
