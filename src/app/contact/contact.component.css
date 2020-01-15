@@ -26,4 +26,7 @@ p {
     font-size: 13px;
     margin: 1px !important;
   }
+  #phonenumber_email app-phonenumber {
+    margin-top: 15px !important;
+  }
 }
