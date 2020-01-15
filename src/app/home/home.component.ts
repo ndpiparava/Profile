@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
     new Skill("Objective-C", 80),
     new Skill("Swift", 75),
     new Skill("Angular", 75),
+    new Skill("JavaScript", 75),
     new Skill("HTML", 80),
     new Skill("CSS", 80),
     new Skill("Bootstrap", 85)
