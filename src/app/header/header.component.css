@@ -7,6 +7,26 @@ div:active {
   outline-style: solid;
 } */
 
+#subtitle {
+  background-color: #000 !important;
+}
+
+.Profile-Image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #15181b;
+}
+img {
+  max-width: 320px;
+  max-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 160px;
+}
+
 p,
 div,
 h1 {
