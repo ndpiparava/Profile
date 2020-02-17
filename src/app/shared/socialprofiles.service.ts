@@ -23,6 +23,10 @@ export class SocialProfileService {
       "https://twitter.com/Ndpiparava",
       "fa-twitter"
     ),
-    new SocialProfile("github", "https://github.com/ndpiparava", "fa-github")
+    new SocialProfile(
+      "github",
+      "https://github.com/Nitin-BSFT?tab=repositories",
+      "fa-github"
+    )
   ];
 }
