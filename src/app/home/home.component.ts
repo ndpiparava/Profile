@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   public mySkills: Skill[] = [
     new Skill("Objective-C", 80),
     new Skill("Swift", 75),
-    new Skill("Angular", 75),
+    new Skill("React Native", 75),
     new Skill("JavaScript", 75),
     new Skill("HTML", 80),
     new Skill("CSS", 80),
