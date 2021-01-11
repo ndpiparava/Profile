@@ -25,18 +25,9 @@ export class ResumeComponent implements OnInit {
         contactPerson: "Manager: Vamshi Bhaskerabotla",
         cellNumber: "+91 9060924330"
       },
-      "Since : 2017"
+      "Since : 2015"
     ),
-    new WorkHistory(
-      "BroadSoft",
-      "Worked as Senior Software engineer as part of mobile app development team.",
-      "Senior Software Engineer",
-      {
-        contactPerson: "Manager: Vamshi Bhaskerabotla",
-        cellNumber: "+91 9060924330"
-      },
-      "Dates:2015 - 2017"
-    ),
+   
     new WorkHistory(
       "AllScripts",
       "Worked as Software engineer and contributed in helathcare mobile app.",
@@ -46,7 +37,17 @@ export class ResumeComponent implements OnInit {
         cellNumber: "+91 994550355"
       },
       "Dates:2013 - 2015"
-    )
+    ),
+
+    new WorkHistory(
+      "NetWeb Technologies Pvt Ltd",
+      "Worked as Senior Software engineer as part of mobile app development team.",
+      "Software Engineer",
+      {
+        contactPerson: "Ritesh Patel"
+      },
+      "Dates:2015 - 2017"
+    ),
   ];
   constructor() {}
 
