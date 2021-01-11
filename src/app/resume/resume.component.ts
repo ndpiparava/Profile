@@ -44,7 +44,8 @@ export class ResumeComponent implements OnInit {
       "Worked as Senior Software engineer as part of mobile app development team.",
       "Software Engineer",
       {
-        contactPerson: "Ritesh Patel"
+        contactPerson: "Ritesh Patel",
+        cellNumber: "+91 6362294410"
       },
       "Dates:2015 - 2017"
     ),
