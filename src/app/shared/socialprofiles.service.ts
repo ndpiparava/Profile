@@ -8,6 +8,7 @@ export class SocialProfile {
   ) {}
 }
 
+
 @Injectable({ providedIn: "root" })
 export class SocialProfileService {
   constructor() {}
