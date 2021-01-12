@@ -27,6 +27,11 @@ export class SocialProfileService {
       "github",
       "https://github.com/Nitin-BSFT?tab=repositories",
       "fa-github"
+    ),
+    new SocialProfile(
+      "stackoverflow",
+      "https://stackoverflow.com/users/1077457/nitin",
+      "fa-stack-overflow"
     )
   ];
 }
