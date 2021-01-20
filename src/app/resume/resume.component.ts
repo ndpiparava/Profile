@@ -41,13 +41,13 @@ export class ResumeComponent implements OnInit {
 
     new WorkHistory(
       "NetWeb Technologies Pvt Ltd",
-      "Worked as Senior Software engineer as part of mobile app development team.",
+      "Worked as  Software engineer as part of mobile app development team.",
       "Software Engineer",
       {
         contactPerson: "Ritesh Patel",
         cellNumber: "+91 6362294410"
       },
-      "Dates:2015 - 2017"
+      "Dates:2011 - 2013"
     ),
   ];
   constructor() {}
