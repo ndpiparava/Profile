@@ -19,8 +19,8 @@ export class ResumeComponent implements OnInit {
   public workHistoryDetails: WorkHistory[] = [
     new WorkHistory(
       "Cisco Systems",
-      "I am currently with Cisco Systems as consulting engineer.",
-      "Consulting Engineer",
+      "I am currently with Cisco Systems as Senior Software engineer for mobile application developement.",
+      "Senior Software Engineer(iOS)",
       {
         contactPerson: "Manager: Vamshi Bhaskerabotla",
         cellNumber: "+91 9060924330"
