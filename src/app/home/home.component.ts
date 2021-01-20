@@ -14,13 +14,13 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   public mySkills: Skill[] = [
-    new Skill("Objective-C", 80),
-    new Skill("Swift", 75),
-    new Skill("React Native", 75),
-    new Skill("JavaScript", 75),
-    new Skill("HTML", 80),
-    new Skill("CSS", 80),
-    new Skill("Bootstrap", 85)
+    new Skill("Swift", 90),
+    new Skill("Objective-C", 79),
+    new Skill("React Native", 76),
+    new Skill("JavaScript", 73),
+    new Skill("HTML", 76),
+    new Skill("CSS", 83),
+    new Skill("Bootstrap", 73)
   ];
 
   ngOnInit() {}
